@@ -1,0 +1,36 @@
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.iml
+
+# Java / Gradle
+.gradle/
+build/
+out/
+target/
+*.class
+
+# Local persistent databases and logs
+data/
+*.mv.db
+*.trace.db
+*.log
+
+# Local reference clone, not application source
+reference/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local development coordination and evidence
+/AGENTS.md
+/PLAN.md
+/tasks/
+/docs/WORKFLOW.md
+/docs/acceptance.md
+/docs/decisions.md
+/docs/environment.md
+/docs/framework-research.md

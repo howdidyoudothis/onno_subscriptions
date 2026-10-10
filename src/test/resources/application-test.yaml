@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:subscriptions-test;DB_CLOSE_DELAY=-1
+org:
+  jobrunr:
+    background-job-server:
+      enabled: false

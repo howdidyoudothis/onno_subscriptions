@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: onno-subscriptions
+  datasource:
+    url: jdbc:h2:file:./data/subscriptions
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+server:
+  address: 127.0.0.1
+  port: 8080
+org:
+  jobrunr:
+    background-job-server:
+      enabled: true
+      worker-count: 1
+    dashboard:
+      enabled: false
+onno:
+  scan-packages:
+    - org.example.subscriptions
+  ui:
+    locale: ru
+  auth:
+    mode: in-memory
+    session:
+      remember-me:
+        enabled: false
+    users:
+      - username: admin
+        password: admin
+        roles: [ADMIN]
